@@ -3,7 +3,7 @@ import requests
 
 app = FastAPI()
 
-BASE_URL = "https://tuosito.com/api/"
+BASE_URL = "https://xrum.dpdns.org/getPage.php?go=SOLO4EVE"
 
 @app.get("/playlist.m3u")
 def generate_playlist():
@@ -11,8 +11,8 @@ def generate_playlist():
         possible_json_urls = [
             f"{BASE_URL}eventi.json",  
             f"{BASE_URL}xrom.json",    
-            f"{BASE_URL}live.json",    
-            f"{BASE_URL}show.json"     
+            f"{BASE_URL}list.json",    
+            f"{BASE_URL}playlist.json"     
         ]
 
         data = None
