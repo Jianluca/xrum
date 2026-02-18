@@ -5,7 +5,7 @@ app = FastAPI()
 
 BASE_URL = "https://xrum.dpdns.org/getPage.php?go=SOLO4EVE"
 
-@app.get("/playlist.m3u")
+@app.get("/eventi.m3u")
 def generate_playlist():
     try:
         possible_json_urls = [
